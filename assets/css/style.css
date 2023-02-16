@@ -1,0 +1,94 @@
+:root {
+    --primary: #fff;
+    --secondary: #24AA6F;
+    --tertiary: #D17644;
+    --quarternary: #000;
+    --default-size: 1.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    height: auto;
+    margin: 10px;
+    background-color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo img{
+    width: 15rem;
+}
+
+.navbar .navbar-nav a {
+    color: var(--quarternary);
+    display: inline-block;
+    font-size: var(--default-size);
+    text-decoration: none;
+    margin: 0 2rem;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--tertiary);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.15rem solid #24AA6F;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: 0.2s;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-unduh .btn-unduh {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.7rem 4rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 1.5px solid #24AA6F;
+    border-radius: 5px;
+}
+
+.navbar .navbar-unduh .btn-unduh:hover {
+    background-color: #24AA6F;
+    color: var(--primary);
+}
+
+.navbar .navbar-unduh a {
+    margin: 0 1.5rem;
+    color: var(--quarternary);
+    font-size: 1.5rem;
+}
+
+#btn-menu {
+    display: none;
+}
