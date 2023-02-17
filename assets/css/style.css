@@ -106,25 +106,29 @@ body {
 }
 
 .hero .row-content .hero-img img {
-    width: 35rem;
+    width: 34rem;
 }
 
 .hero .row-content .hero-text {
-    padding: 0 7%;
+    padding: 0 7% 0 10%;
 }
 
 .hero .row-content .hero-text .tagline {
     color: var(--tertiary);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin-bottom: 1rem;
 }
 
 .hero .row-content .hero-text .headline-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    line-height: 1.5;
 }
 
 .hero .row-content .hero-text .headline-subtitle {
-    color: #949494;
-    font-size: 1.3rem;
+    color: #b9b9b9;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .hero .row-content .hero-text .mulai-sekarang {
@@ -140,17 +144,19 @@ body {
 
 .hero .row-content .hero-text .row-keunggulan {
     display: flex;
-    text-align: center;
-    align-items: center;
+    text-align: left;
     justify-content: space-between;
+    
 }
 
 .hero .row-content .hero-text .row-keunggulan h3 {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
 }
 
 .hero .row-content .hero-text .row-keunggulan span {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 /* Media Queries */
@@ -204,6 +210,14 @@ body {
 
     .navbar .navbar-nav a:hover::after {
         transform: scaleX(0.2);
+    }
+
+    .hero .row-content {
+        flex-wrap: wrap;
+    }
+
+    .hero .row-content .hero-img img {
+        width: 100%;
     }
 }
 
