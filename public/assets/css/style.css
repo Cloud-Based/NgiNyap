@@ -18,17 +18,17 @@
 
 body {
     height: auto;
-    margin: 10px;
+    /* margin: px; */
     background-color: var(--primary);
     font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar */
 .navbar {
-    height: 7rem;
+    height: 4rem;
     display: flex;
     align-items: center;
-    padding: 1rem 10%;
+    padding: 1.5rem 10% 1rem;
     background-color: var(--primary);
     position: fixed;
     top: 0;
@@ -78,6 +78,7 @@ body {
     color: var(--secondary);
     border: 1.5px solid #24AA6F;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .navbar .navbar-unduh .btn-unduh:hover {
@@ -148,6 +149,7 @@ body {
     font-weight: 500;
     font-size: 1.1rem;
     margin: 3rem 0;
+     cursor: pointer;
 }
 
 .hero .row-content .hero-text .row-keunggulan {
@@ -165,6 +167,22 @@ body {
 .hero .row-content .hero-text .row-keunggulan span {
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+/* Destination */
+.destinasi {
+    align-items: center;
+    min-height: 30vh;
+    border: 1px solid #000;
+}
+
+.destinasi .destinasi-box {
+    background-color: #D3EEE2;
+    height: 300px;
+}
+
+.destinasi .row-content {
+    display: flex;
 }
 
 /* Media Queries */
